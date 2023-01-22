@@ -1,0 +1,409 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/obj/Debug/net6.0/scopedcss/projectbundle/MyAspNetProject.Web.bundle.scp.css",
+      "PackagePath": "staticwebassets/MyAspNetProject.Web.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/.DS_Store",
+      "PackagePath": "staticwebassets/.DS_Store"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/css/example.css",
+      "PackagePath": "staticwebassets/css/example.css"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/images/.DS_Store",
+      "PackagePath": "staticwebassets/images/.DS_Store"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/images/01859288-29cc-4238-aa57-75bdf65c6df8.jpg",
+      "PackagePath": "staticwebassets/images/01859288-29cc-4238-aa57-75bdf65c6df8.jpg"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/images/01db8bb0-8add-46bd-b2c2-7fd6b38157fd.jpg",
+      "PackagePath": "staticwebassets/images/01db8bb0-8add-46bd-b2c2-7fd6b38157fd.jpg"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/images/023281d2-7864-4356-8133-29a46694330c.jpg",
+      "PackagePath": "staticwebassets/images/023281d2-7864-4356-8133-29a46694330c.jpg"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/images/07f349f4-dde8-4050-9f8a-dcff1e0cab2e.jpg",
+      "PackagePath": "staticwebassets/images/07f349f4-dde8-4050-9f8a-dcff1e0cab2e.jpg"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/images/0b88376e-bcc7-4630-a72c-32270b11dd74.jpg",
+      "PackagePath": "staticwebassets/images/0b88376e-bcc7-4630-a72c-32270b11dd74.jpg"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/images/2a3a3887-e692-47fa-9e63-03cebc4f7afd.jpg",
+      "PackagePath": "staticwebassets/images/2a3a3887-e692-47fa-9e63-03cebc4f7afd.jpg"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/images/352ac78c-ace0-4999-8745-716799c5359e.jpg",
+      "PackagePath": "staticwebassets/images/352ac78c-ace0-4999-8745-716799c5359e.jpg"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/images/388e63af-1ef2-4454-b7d9-ab1b53643abe.jpg",
+      "PackagePath": "staticwebassets/images/388e63af-1ef2-4454-b7d9-ab1b53643abe.jpg"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/images/4a9534d5-af26-40f1-b818-90174fac1a93.jpg",
+      "PackagePath": "staticwebassets/images/4a9534d5-af26-40f1-b818-90174fac1a93.jpg"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/images/53af6964-770f-4892-a282-7d864a8eaefd.jpg",
+      "PackagePath": "staticwebassets/images/53af6964-770f-4892-a282-7d864a8eaefd.jpg"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/images/56eb774d-49f2-48b7-bcc1-139b305f7bea.jpg",
+      "PackagePath": "staticwebassets/images/56eb774d-49f2-48b7-bcc1-139b305f7bea.jpg"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/images/82284344-6a0a-47a3-9275-8f1fa7fbca51.jpg",
+      "PackagePath": "staticwebassets/images/82284344-6a0a-47a3-9275-8f1fa7fbca51.jpg"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/images/8240672c-ec68-4629-aaea-d15089f12826.jpg",
+      "PackagePath": "staticwebassets/images/8240672c-ec68-4629-aaea-d15089f12826.jpg"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/images/832ddde3-1582-4f31-822c-947cef9f7db0.jpg",
+      "PackagePath": "staticwebassets/images/832ddde3-1582-4f31-822c-947cef9f7db0.jpg"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/images/8cd9b1ea-eb8e-49f8-b530-9a1872d15c3e.jpg",
+      "PackagePath": "staticwebassets/images/8cd9b1ea-eb8e-49f8-b530-9a1872d15c3e.jpg"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/images/8ee07518-89e8-430b-ac29-7360e6ccba0e.jpg",
+      "PackagePath": "staticwebassets/images/8ee07518-89e8-430b-ac29-7360e6ccba0e.jpg"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/images/98c98788-28cb-41c8-80b3-80ba1dfed613.jpg",
+      "PackagePath": "staticwebassets/images/98c98788-28cb-41c8-80b3-80ba1dfed613.jpg"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/images/99165026-3aa6-4622-9122-bf34480751da.jpg",
+      "PackagePath": "staticwebassets/images/99165026-3aa6-4622-9122-bf34480751da.jpg"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/images/9955e619-53c1-400d-aefd-fa51edf8eadf.jpg",
+      "PackagePath": "staticwebassets/images/9955e619-53c1-400d-aefd-fa51edf8eadf.jpg"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/images/a6d0b20d-3770-4643-a99f-8a38dd842732.jpg",
+      "PackagePath": "staticwebassets/images/a6d0b20d-3770-4643-a99f-8a38dd842732.jpg"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/images/b361135d-8ce4-4b9c-8ea7-5144a7f497db.jpg",
+      "PackagePath": "staticwebassets/images/b361135d-8ce4-4b9c-8ea7-5144a7f497db.jpg"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/images/c606dcc3-5470-44d6-a63f-f66421bc3127.jpg",
+      "PackagePath": "staticwebassets/images/c606dcc3-5470-44d6-a63f-f66421bc3127.jpg"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/images/car-100x100.jpg",
+      "PackagePath": "staticwebassets/images/car-100x100.jpg"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/images/car.jpg",
+      "PackagePath": "staticwebassets/images/car.jpg"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/images/computer1.jpg",
+      "PackagePath": "staticwebassets/images/computer1.jpg"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/images/computer2.jpg",
+      "PackagePath": "staticwebassets/images/computer2.jpg"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/images/d42c6ee5-f414-4766-be75-724ee6cec42c.jpg",
+      "PackagePath": "staticwebassets/images/d42c6ee5-f414-4766-be75-724ee6cec42c.jpg"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/images/d66b36fc-68bd-497a-8bd2-4bddd52f1c88.jpg",
+      "PackagePath": "staticwebassets/images/d66b36fc-68bd-497a-8bd2-4bddd52f1c88.jpg"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/images/d8aced18-ac7c-47fc-a5a3-6a02d618df41.jpg",
+      "PackagePath": "staticwebassets/images/d8aced18-ac7c-47fc-a5a3-6a02d618df41.jpg"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/images/e32fe478-f73f-4386-8a44-e90dba51e4b8.jpg",
+      "PackagePath": "staticwebassets/images/e32fe478-f73f-4386-8a44-e90dba51e4b8.jpg"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/images/ee613dac-c946-46b6-9700-8d95bc760283.jpg",
+      "PackagePath": "staticwebassets/images/ee613dac-c946-46b6-9700-8d95bc760283.jpg"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/images/f88b3d7a-82f0-4bba-af76-3cb42d7ad767.jpg",
+      "PackagePath": "staticwebassets/images/f88b3d7a-82f0-4bba-af76-3cb42d7ad767.jpg"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/images/noimage.jpg",
+      "PackagePath": "staticwebassets/images/noimage.jpg"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/jquery/dist/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+    },
+    {
+      "Id": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/wwwroot/lib/jquery/dist/jquery.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.MyAspNetProject.Web.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.build.MyAspNetProject.Web.props",
+      "PackagePath": "build\\MyAspNetProject.Web.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.MyAspNetProject.Web.props",
+      "PackagePath": "buildMultiTargeting\\MyAspNetProject.Web.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.MyAspNetProject.Web.props",
+      "PackagePath": "buildTransitive\\MyAspNetProject.Web.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

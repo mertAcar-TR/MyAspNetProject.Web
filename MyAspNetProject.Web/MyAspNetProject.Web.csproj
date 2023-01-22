@@ -1,0 +1,63 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'MyAspNetProject.Web With Kestrel' " />
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.1" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.Design" Version="1.1.0" />
+    <PackageReference Include="Npgsql" Version="7.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.2">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Npgsql.EntityFrameworkCore.PostgreSQL" />
+    <None Remove="Npgsql.EntityFrameworkCore.PostgreSQL.Design" />
+    <None Remove="Npgsql" />
+    <None Remove="Microsoft.EntityFrameworkCore.Design" />
+    <None Remove="Helpers\" />
+    <None Remove="ViewModels\" />
+    <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="Mapping\" />
+    <None Remove="PartialViews\" />
+    <None Remove="Views\Shared\Components\" />
+    <None Remove="Views\Shared\ViewComponents\" />
+    <None Remove="Views\Shared\Components\ProductList\" />
+    <None Remove="Views\Shared\Components\Visitor\" />
+    <None Remove="TagHelpers\" />
+    <None Remove="Views\Blog\" />
+    <None Remove="Filters\" />
+    <None Remove="Views\Categories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Mapping\" />
+    <Folder Include="PartialViews\" />
+    <Folder Include="Views\Shared\Components\" />
+    <Folder Include="Views\Shared\ViewComponents\" />
+    <Folder Include="Views\Shared\Components\ProductList\" />
+    <Folder Include="Views\Shared\Components\Visitor\" />
+    <Folder Include="TagHelpers\" />
+    <Folder Include="wwwroot\images\" />
+    <Folder Include="Views\Blog\" />
+    <Folder Include="Filters\" />
+    <Folder Include="Views\Categories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\images\" />
+  </ItemGroup>
+</Project>

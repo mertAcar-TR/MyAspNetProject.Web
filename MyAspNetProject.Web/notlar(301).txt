@@ -1,0 +1,83 @@
+﻿FORM ELEMENTS:
+---------------
+* Rengi farklı olan ve asp- ile başlayanlara "Tag Helper" denir.
+
+* Eğer "asp-for:" kullanırsan ASP.NET içerisine vermiş olduğun property'nin tipine göre type'ı belirliyor.
+  Eğer bu otomatik gelen typ'ı overload yapmak istersen type="" yazıp içerisine yazabilirsin.
+
+* Label'ların "for" özelliğini kullanarak sadece kutucuğa basmadan da aktif hale getirebilirsin.
+
+* Text-Area ile kullanıcıdan birden fazla satır veri alabiliriz.
+----------------------------------------------------------------
+
+MODEl/FORM VALIDATION
+----------------------
+* Validation yaparken direk Entity üzerinde çalışmak yerine her Entity için bir ViewModel sınıfları yapılır.
+  Hem Entity'i kirletmezsin hem de sadece göstermek istediklerini gösterebilirsin.
+
+* ViewImports.cshtml'e global adresler ekliyebilirsin.
+
+* AutoMapper sayesinde entity nesnelerini direk ViewModel'lere mapleyip validation'a hazır hale getirebilirsin.
+  Tabiki isimleri aynı olmalı propertylerin.(Farklı olursa ekstra konfigürasyon gerektirir ve mapleme yavaşlar.)
+
+* AutoMapper paketini ekledikten sonra Program.cs'ye haber vermelisin.Ondan sonra Mapping klasörü ve ViewModelMapping
+  oluşturmalısın.
+
+* Required attribute'unu istenilen property'nin üstüne konulur.View kısmında otomatik asp-for-validation gelir.
+  ModelsState.IsValid,Controller sınıfından gelir.
+
+* Required attribute'u kullanıyorsan değer tipleri nullable yapmalısın.
+
+* [Range(alt_değer,üst_değer,mesaj)] ile belli bir aralık sınırladık.
+
+* View'da input type="number" yaparsan sadece sayısal değerler yazabilirsin.(Decimal değerler hariç)
+
+* StringLenght,Range ile aynı mantık.
+
+* EmailAddres,girilen değerin e-mail formatında olup olmadığına bakar.
+
+* RegularExpression ile herhangi bir pattern'ı karşılaştırabiliriz.
+
+* asp-validation-summary=All,dersen bütün hata mesajlarını bir yerde toplar.
+  asp-validation-summary=ModelOnly,dersen bu örnek için aşağıdaki textboxlar dışındaki bir hatayı gösterir.
+
+* Eğer hata verirken sayfa sürekli yenileniyorsa bu server side validation'dır.
+  Clint side validation ile  (js ve html5 sayesinde) bilgiler servera gitmeden kontrol ediliyor.
+
+* Shared klasöründeki ValidationScriptPartial bölümünde kütüphaneler var.İlki jquerry kütüphanesi,ikincisi
+  ise javascript ve asp.net arası ilişkiyi sağlayacak kütüphanedir.Onları alıp istenilen View'e ekleyebilirsin.
+
+* RemoteValidation,ekstra bir method çalıştırmak istediğimizde kullanırız.
+-------------------------------------------------------------------------
+
+PARTIAL VIEW/VIEW COMPONENT
+----------------------------
+* Partial View'ler,bir uygulamanın birçok tarafında kullandığımız,normal sayfalar gibi bir layout'a sahip olmayan
+  sayfalardı.
+
+* Partial View'lar,Shared içerisinde olduğu zaman direk isim verebilirsin.Ama başka klasördeyse o adresi vermelisin.
+  Option tuşu ile N tuşuna basarsan tilde(~) işaretini yapabilirsin.
+
+* Bootstrap,default olarak bir sayfayı 12 sütuna böler.
+
+* ViewComponent'ler,çözdükleri problem yönüyle PartialView'ler ile aynıdır.Ancak PartialView'ler ihtiyaç duyduğu
+  datayı dışarıdan alır.ViewComponent'lerin kendi .cs dosyaları vardır.Bu sayede datayı kendi sınıfından alır.Aradaki diğer
+  fark ise component'lerin birden fazla .cshtml dosyası olabilir.
+
+* Shared Klasörüne,Components ve ViewComponents adlı 2 klasör oluşturduk.Bu isimlendirmeler önemli çünkü ASP.NET otomatik olarak
+  bu isimler üzerinden arama yapar.
+
+* Component klasörü içine de her bir ViewComponent için bir klasör oluşturulur.
+
+* TagHelper'ların hepsi imports klasöründen gelir.
+--------------------------------------------------
+
+TAG HELPERS
+-------------
+* Tag Helper'ın amacı .cshtml dosyaları içinde C# kodu yazımından kurtarmak.
+
+* Tag Helper Klasörü içine ekliyeceğin sınıfların isimleri -isim-TagHelper olursa ekstra konfigürasyon yapmazsın.
+
+* Mutlaka @addTagHelper demelisim _ViewImports'da.
+
+* [HtmlTargetEleman("")] attribute'u ile tag helper'larına isim verebilirsin.

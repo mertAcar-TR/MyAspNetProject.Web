@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Merhaba Dünya</h1>
+
+@{
+    var name = ViewBag.name;
+    <p>@name</p>
+}
+<p>@name</p>
+<p>@ViewBag.name </p>
+
+<hr/>
+<p>@ViewData["age"]</p>
+
+<h1>İsimler</h1>
+
+@foreach (var item in @ViewData["names"] as List<string>)
+{
+    <p>@item</p>
+}
+
+<hr />
+
+<p> @ViewBag.persons.Id - @ViewBag.persons.Name - @ViewBag.persons.Age     </p>

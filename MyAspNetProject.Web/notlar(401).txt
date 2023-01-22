@@ -1,0 +1,76 @@
+﻿ROUTING
+----------
+* Attribute bazlı routing her zaman Conventional bazlı routing'den iyidir.
+
+* Program.cs'deki MapControllerRoute altında gelen routing'ler Conventional olanlardır.
+
+* Routing'de id olarak yazmışız,yani metod parametlerine id parametresi vermelisin.Eğer başka bir
+  isimle kullanmak istersen başka işlemler yapmalısın.
+
+* "blog/{*article}",yazarsan blog'dan sonra ne yazarsan yaz hep article action methodu çalışır.
+-----------------------------------------------------------------------------------------------------
+
+FILTERS
+------------
+* Filter'lar sayesinde request,response'a dönüşürken araya kodlar ekleyebiliriz.Attribute'lar sayesinde yazılır.
+
+* Action methoda request geldiği andan itibaren filter'lar çalışmaya başlar.
+
+* Authorization Filters:Yetkiye bakar.
+  Resource Filters:İlgili action method çalışmadan bazı işlemler yapılacaksa burada yapılır.
+  Action Filters:İlgili action method çalışmadan önce ve çalışmasından sonra kod enjekte edebiliriz.Result Filter da aynı mantık.
+  Response sadece resource ve result a uğrayabilir.
+
+* .Net bir hata sayfasını önce ilgili controller'ın içinde arar  bulamazsa Shared içindeki Error'se bakar ve bulduğu an sayfayı döner.
+
+* Eğer bir filter constructor'ında bir parametre alıyorsa o normal filtre gibi tanımlanmaz.Service Filter denilen özel bir filter devreye girer.
+  Parametre olarak basit tip geçmez isen Service Filter'ı da kullanıp DI Container'a eklemen gerekir.
+--------------------------------------------------------------------------------------------------------
+
+MIDDLEWARE
+---------------
+* Middleware bir katmandır.Request'in response'a dönüştüğü(pipeline) yerde bulunur.
+
+* Middleware'e hem girerken hem çıkarken uğranılır.
+
+* Program.cs'de use ifadesiyle eklenenlerin hepsi katmandır.
+  UseExceptionHandler("/Home/Error") ==> uygulamada hata olduğu an Home controller'da ki error sayfasına gidiyor.
+  UseHsts ==> Response'u header'a ekliyor.(Tarayıcıyı hemen HTTPS'e çeviriyor.)
+  UseHttpsRedirection ==> url'de http ile bir istek başlanırsa onu https'e çeviriyor.
+  UseStaticFiles ==> wwwroot içindeki css,images,js,lib dosyalarının dışarıdan erişilmesine imkan sağlıyor.
+  UseRouting ==> routing yaparken kullanılır.
+  UseAuthorization ==> kimlik yetkilendirme yapar.(veritabanında kontrol)
+  UseAuthentication ==> kimlik doğrulama yapar.(mesela bazı sayfalara sadece adminler girebiliyor)
+
+* Middleware oluştururken next komutu önemli çünkü biz gelen isteği denetleyip diğer tarafa iletcez.
+  app.Run() ise sonlandırıcı olduğunu gösterir.
+
+* Gerçek hayatta,Middleware ile Response çok dokunulmaz.
+
+* MapWhen methodu,middleware'ı yakalamak istediğimizde kullanırız.
+
+* Bir sınıfın middleware olabilmesi için mutlaka 2 şey yapılmalı:
+  1-) Constructor'da mutlaka middleware delege geçmeli.
+  2-) Invoke Async isimli bir method oluşturmak.
+
+* IPV4 ==> 127.0.0.1 ==> localhost
+  IPV6 ==> ::1 ==> localhost
+-----------------------------------------------
+
+FILE UPLOAD
+--------------
+* IFileProvider interface'i ile çalışılır.DI conteiner'da geçilmeli.
+
+* Resim eklemek istiyorsan View tarafında mutlaka -enctype="multipart/form-data"- olmalı
+
+* Resimleri dosyaya kaydederken her seferinde random isimler eklenmeli çünkü eğer 2 kişi aynı adlı 2 resim eklerse
+  biri diğerini ezebilir.
+-----------------------------
+
+ONE TO MANY RELATIONSHIP
+--------------------------
+* Navigation property kullanılır.(Bir entity içerisinde diğer entity'lere referans vermek.)
+
+* One to many'de,many'nin olduğu yerde birde asıl ilişkiyi tutucak foreign key tanımlanır.
+
+* İsimleri direk yazarsan ef core kolay anlar.

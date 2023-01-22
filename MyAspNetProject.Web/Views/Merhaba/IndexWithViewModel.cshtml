@@ -1,0 +1,13 @@
+﻿@using MyAspNetProject.Web.Controllers;
+
+@{
+    ViewData["Title"] = "IndexWithViewModel";
+}
+@model List<Product2>;
+
+<h1>Ürünler</h1>
+
+@foreach (var item in Model)
+{
+    <p>@item.Id-@item.ProductName</p>
+}

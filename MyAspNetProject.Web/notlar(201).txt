@@ -1,0 +1,182 @@
+EF Core Nedir?
+------------------
+* Hafif,genişletilebilir ve open-source olan veri erişim teknolojisidir.
+
+* Microfost tarafından geliştirilir.
+
+* Bir ORM(Object-Realitonal Mapping)'dir.
+
+* LINQ (Language Integrated Query) teknolojisi sayesinde kodlar yazılır.C# 2.0'dan beri kullanılır.
+  - C# ilk başladığında bir linq sorgularını; LINQ to Objects Collection,LINQ TO XML,LINQ TO Entities(veritabanında bir karşılığı var)'larına yazabiliriz.
+  - Tip güvenli çalışmayı sağlar.Yanlış yazıldığında kod derlenmeden hata verir.
+----------------------------------------------------------------------------------
+
+ORM NEDİR?
+------------
+* Nesne Mapleme Tekniğidir.
+
+* Veritabanındaki her bir tablo kodsal olarak bir sınıfa karşılık gelir.
+--------------------------------------------------------------------------
+
+EF CORE'un AVANTAJLARI NELERDİR?
+--------------------------------
+* Veritabanı ile tip güvenli bir şekilde çalışmamıza imkan sağlar.
+
+* Veritabanı ile ilgili tüm süreçleri soyutlar.
+
+* Kodun okunabilirliğini arttırır.
+
+* Kodun daha sürdürülebilir olmasına imkan sağlar.
+
+* Uygulama geliştirme süresini azaltır.
+
+* SQL Injection gibi zafiyetlere karşı doğal koruması vardır.
+
+* Veritabanı ile ilgili tüm işlemlerinizi kod içerisinden yapmamıza imkan verir.
+--------------------------------------------------------------------------------
+
+EF CORE'un DEZAVANTAJLARI NELERDİR?
+-----------------------------------
+* Veritabanı ile ilgili tüm süreci soyutladığından dolayı biraz yavaştır.
+
+* EF Core tarafından oluşturulan query'lere %100 müdahele edemeyiz.
+-------------------------------------------------------------------------------
+
+EF CORE YAKLAŞIMLAR(DATABASE FIRST)
+------------------------------------
+
+* İlk önce database oluşturulur.
+
+* Daha sonra kodla bunlara karşılık gelen sınıflar oluşturulur.
+
+* Sonra context sınıfı içerisinde bunları eşleştiririz.
+-------------------------------------------------------
+
+EF CORE YAKLAŞIMLAR(CODE FIRST)
+-------------------------------
+* İlk önce kodlar yazılıp context ve class'lar oluşturulur.
+
+* Sonra bu kodların database karşılığı olması için migrations adı verilen bir tool kullanılır.
+
+* Uygulamalarda code first kullanmak best practice'dir.Çünkü tek bir yerden her şeyi yönetiriz.
+--------------------------------------------------------
+
+EF CORE KÜTÜPHANELERİNİN EKLENMESİ
+----------------------------------
+* İlk önce temel olan Microsoft.EntityFrameworkCore eklenir.
+
+* Sonra Microsoft.EntityFrameworkCore.{çalışılan database tipi} biz .SqlServer olanı indircez.
+
+* Microsoft.EntityFrameworkCore.SqlServer.Design paketi migrations ve dbcontext'i başka class libray'lilerde
+  kullanmak istediğimizde işimize yarayacak.(Ekle)
+
+* Microsoft.EntityFrameworkCore.Tools, code first için bir ihtiyaç.Migrations komutlarını package manager console
+  üzerinden yazmamızı sağlar.(Ekle)
+---------------------------------------
+
+SQL SERVER VERİ TABANI OLUŞTURMA
+---------------------------------
+* EF Core bir database ile çalışmak istediğinde mutlaka bir primary key bekler.
+
+* Decimal(18,2) virgülden sonra 2 sayı alır.
+
+* Database'in connection string'ini alıp appsettings.json dosyasına gidiyoruz.
+
+* Orada "ConnectionStrings":{"{isim ver}": {connectionstring} } , yazılır.
+
+* Edit sekmesinde > Advanced > Code Wrap ile kodları yazarken sağa kaydırma özelliği yerine otomatik aşağı inmesini sağlarız.
+-----------------------------------------------------------------------------------------------------------------------------
+
+DBCONTEXT SINIFININ OLUŞTURULMASI
+-----------------------------------
+* Models klasörünün altına oluştur.
+
+* Contructor içine DbContextOptions<> yazılır ki hangi db olduğu belli olsun.
+
+* Ama içini doldurmayı startup(.Net 6.0 dan sonraki ismi Program.cs)'da yapılır.
+
+* Program.cs'de app builder metodundan önce bir dbcontext nesnesi ekliyoruz.
+
+* ConfigurationManager sınıfı appsettings.json içindeki dataları okumayı sağlar.
+--------------------------------------------------------------------------------
+
+CODE-FİRST 
+-----------
+* İlk önce dotnet ef migrations add -isim- yazılıp bir migration dosyası oluşturulur.
+
+* Up metodu veritabanına yansıyacak değişiklikleri içerir.
+
+* Down metodu ise tam tersi ,migration kaldırıldığında çalışır.
+
+* Sonra dotnet ef database update ile database oluşturulur.
+
+* Bir değişiklik yaptıktan sonra yine dotnet ef migrations add -Mantıklı bir isim- yapılır sonra update'lenir.
+
+* Eğer veri tabanına yansıtmadıysanız dotnet ef migrations remove ile geri alabilirsin ama remove migrations hep
+  en son ekleneni siler ve veritabanına uygulanmış değişiklikleri silemez.
+
+* Asla Snapshot veya başka bir yerdeki migrations kodlarını elle değiştirme.
+
+* Database' e uygulanmış için ilk önce dotnet ef database update -migration ismi-
+
+* Şimdi dikkat ef core o yazdığın migration ismine KADAR olan bütün migrationları databaseden çıkarcak
+  sonra dotnet ef migrations remove diyerek migrationsları kaldırabilirsin.
+
+* Script migration,bizim migrationları alıp SQL serverda çalıştırılabilecek bir script dosyası yapar.
+-----------------------------------------------------------------------------------------------------
+
+KULLANICIDAN VERİ ALMA YÖNTEMLERİ
+----------------------------------
+* id ile backend deki bir textbox u yakalamazsın.Mutlaka name attribute'ı doldurulmalı.
+  <input type="text" name="Name" /> böyle <input type="text" id= name="Name" /> dersen javascripte yakalarsın.
+
+* Button tipi submit olmalı yoksa değerler sunucuya gitmez.
+
+* Bir httppost metodu oluşturulmalıdır.
+
+* Girilen değerlerin hangi controller hangi metoda gideceğini belirle.
+
+* Dataları HttpPost ile göndermek iyidir çünkü datalar request'in body kısmında gönderilir
+  yani şifreli ve güvenlidir.HttpGet'de ise url de taşınır ve güvenli değildir.Bu durumda datalar
+  request'in querry-string'inde gelir.
+
+* Complex type'lar request'in body sinde bekler.Basit typelar ise query string'de bekler.
+
+* Toplam 5 adet model binding attribute([FromQuery] - Gets values from the query string.
+                                        [FromRoute] - Gets values from route data.
+                                        [FromForm] - Gets values from posted form fields.
+                                        [FromBody] - Gets values from the request body.
+                                        [FromHeader] - Gets values from HTTP headers.) vardır.
+------------------------------------------------------------------------------------------
+
+DEPENDENCY INJECTION
+--------------------
+* Bir design pattern'dır.Aynı zamanda bir implementasyondur(Inversion of Control Principle ve Dependency Inversion Principle).
+
+* Bir yazılımın ihtiyaç duyduğu bağımlılıkların dışardan giderilmesini sağlamak amacıyla kullanılır.
+
+* Inversion of Control Principle: A ve B class'ı olsun.B classı çalışması için A classına ihtiyaç duyuyorsa
+  B class'ı A classının içinde üretilmek yerine A classına dışardan gelir böylelikle B classının yaşam döngüsüne
+  A classı karışmamış olur.
+
+* Dependeny Inversion Principle: A ve B class'ı birbirlerine ihtiyaç duyuyorlarsa direk bağlantı yerine bir interface ya da
+  abstract class sayesinde bağlantı sağlanır bu sayede loose coupling(kırılabilir/esnek bağ) oluşur.Bir projede ne kadar
+  loose coupled bağ varsa o proje o kadar sürdürülebilir olur.
+
+* Bunun tam tersi tighlty coupling'dir burada bağlar sıkıdır ve sürdürülebilirlik o kadar az olur.
+
+* Singleton:Bağımlılık nesneleri DI(IoC) Container tarafından eğer memory'de yoksa sadece 1 kere oluşturulur.
+            Singleton kullandığında yardımcı metodların DB'ye bağlanmamalı.
+            ASP projende constructor'a ekledikten sonra Program.cs'de gerekli ayarlamaları yapmalısın.
+            Method Injection yaparken parametre yerine(parametre olmicak asla ama öyle yazılır) interfaceden
+            önce [FromServices] yazarsan bu parametrenin diğer container'dan geliceğini söyler.
+            Business ve veritabanı kodları singleton tanımlanmaz daha çok Scope tanımlanır.
+
+* Scoped:Enjekte ettiğimiz sınıfın döngüsü Request,Response'a dönüşene kadardır.Program.cs'de tanımlaması Singleton gibidir.fc
+         Context'in default değeri Scoped'tur.
+
+* Transient:DI her bağımlılık gördüğünde o nesneyi üretir.Request,Response olduğunda hepsi tekrardan düşer.
+
+* Class içinde parametreli constructor tanımladığın anda default constructor gider.Program.cs de bu sefer parametre geçersin.
+
+* Program.cs'e servis olarak eklenen(DI olarak eklenen veya DI'ya eklenmil) yapılar için bir daha ekstra tanımlama yapmana gerek yoktur.

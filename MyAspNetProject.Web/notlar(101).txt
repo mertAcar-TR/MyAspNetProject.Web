@@ -1,0 +1,255 @@
+﻿WEB UYGULAMALARININ ÇALIŞMA MANTIĞI:
+------------------------------------
+Static Uygulamalar ==&gt; Herhangi bir veri kaynağı ile iletişime geçmeyen ve kullanıcıdan form aracılığıyla bilgi almadağımız sayfalardır.
+Dinamik Uygulamalar ==&gt; Kullanıcı ile etkileşime geçen uygulamalardır.
+
+Static Uygulama Çalışma Mantığı;
+
+Request(istek)
+Client ======&gt; Web Server Sunucu(CLİENT SADECE HTML,CSS ve JAVASCRİPT DİLİNDEN ANLAR!) statick sayfalar kullanıcılar isteğiyle değişmez.
+&lt;======
+Response(cevap)
+
+Dinamik Uygulama Çalışma Mantığı;
+
+WEB SERVER(Sunucu)
+************************************************
+* *
+* Application &lt;===&gt; Database *
+Request * || *
+Client =======&gt; * || *
+&lt;======= * HTML,CSS,Javascript *
+Response * *
+* *
+* *
+************************************************
+
+------------------------------------------------------------------------
+
+.NET CORE NEDİR?
+--------------------
+
+Avantajları: Cross Platform,Open Source,Esnek,Yüksek Performans,Geniş Uygulama Desteği
+
+-------------------------------------------------------------------------
+
+SDK ve Runtime Nedir?
+---------------------
+
+SDK(Software Development Kit): .Net uygulaması geliştirmek için gerekli olan kütüphane veya araç setidir.
+
+Runtime: .Net ile geliştirilmiş bir uygulamanın çalışmasına imkan veren ortamdır.Bu kütüphanelerde geliştirmek için değildir,geliştirileni çalıştırır.SDK indirdiğinde Runtime otomatik gelir.Farklı ortamlar için farklı .Runtime'lar gerekir.Sunucuda Runtime kurulur.
+
+----------------------------------------------------------------------------
+
+MVC Tasarım Deseni
+--------------------------------
+MVC bir DESİGN PATTERN'dır!!!!!! Framework DEĞİLDİR!!!!!!!!!!!
+
+Model-View-Controller==&gt;Seperation of Concern deseni(ilgili kod ilgili yerde)
+
+Model:İş kuralları yazılır.Bağımsızdır.Direk Controller veya View ile ilişkisi yoktur.(Hata ayıklama ve test için avantaj)
+
+View:Kullanıcıya gözüken yer.
+
+Controller:Yönetici.Kullanıcıyla birebir etkileşime girer.Requestler ilk olarak controller a gelir.
+Mesela bir istek geldi eğer veritabanını gidilecekse controller onu model a gönderir,tekrar aldıktan sonra view a html,css,js
+kodlarını ekler.
+
+------------------------------------------------------------
+
+Proje Dosya Yapısı
+-----------------------------
+
+Connected Service:Uygulama üzerinden third part servislere(OpenAPI,gRPC,WCF Web Service) bağlanılabilir.
+
+Dependencies:Kütüphaneler buradadır.
+
+Properties=&gt;launchSetting.json:Uygulamanın nasıl ayağa kalkıcağı ayarlanır.
+
+wwwroot:tüm statik dosyalar burada(css-js dosya,resim,video vs.)
+
+Controllers:Tüm Controller burada.
+
+Models:Business codu ve veritabanı işlemleri
+
+Views:Kullanıcıya gözükecek UI lar ayarlanır.
+
+appsettings.json:Veritabanı bağlantı yolları,statik yollar burada tanımlanır.Default olarak loglama gelir.
+
+Program.cs:Uygulamanın ayağa kaltığı yer.Bütün temel konfigürasyon buradan yönetilir.Örneğin üyelik sistemi inşa ediceksen
+temel kurallar burada bulunur.
+
+-----------------------------------------------------------
+
+ASP.NET Core Uygulamasını Çalıştırma
+------------------------------------
+
+*.Net Core sayesinde hem IIS hem Kestrel(open-source sunucu) ile ayağa kaldırabiliriz.(.net framework ile sadece IIS olurdu.)
+* Best Practice:Uygulamayı mutkala HTTPS üzerinden ayağa kaldırmalıyız.(clien-server arası iletişim şifrelenir.)
+* .Net 6.0 ile main metodu arayüzde kalktı.(aradillerde kullanılıyor).
+* Web uygulaması özünde bir konsol uygulamasıdır.
+
+-----------------------------------------------------------
+
+Temel Routing Yapısı
+--------------------
+
+* Routing:Kullanıcıların bir tarayıcı üzerinden url  girmeleri veya bir linke tıkladıklarında uygulamanın nasıl tepki verdiği ayarlanır.7
+* Program.cs de app.app.MapControllerRoute bak.
+
+--name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+* 'eşittir' diyip yazdığı kelimeler sayesinde eğer hiçbir parametre vermezse default olarak oraya sayfaları göstereceğini söyler.
+* id'ye 'soru işareti' koyarak null olabileceğini belirtmiş eğer soru işareti olmasaydı mutlaka id de vermeliydin.
+* Controller içindeki metodlar action metoddur.Çünkü view da sayfa olarak bir karşılıkları vardır.
+* Uygulamayı canlıya aldığında https://mysite.com(alanadı).{bir şey} olur ama development aşamasında /https://localhost:port olur bunları canlı uygulamada göstermeyiz.
+
+----------------------------------------------------------
+
+Razor View Engine
+-----------------
+
+* Adı üstünde bir yazılım motorudur.
+* Görevi Views daki .cshtml dosyalarını tarayıcının anlayacağı html koduna çevirmektir.
+* Kullanılma amacı ise; uzantısı .cshtml yani c# kodu da barındırabilir ama tarayıcı bunu anlayamaz eğer razor view engine yoksa.
+* Razor syntax'ı kullanılır. @ işareti ile razor view engine'e "bak biz c# kodu kullanıcaz al onu html e çevir" deriz.
+
+----------------------------------------------------------
+
+--CONTROLLER--
+--------------
+
+* Action metod olması için Views da bir sayfa karşılığı olması lazım.
+* Action metod değilse başka bir yerde tanımlayıp controller içinde çağırırız.
+
+* ActionResult --> View döndü
+  ContentResult --> String döndü
+  JsonResult --> Ajax isteklerinde kullanılır
+  EmptyResult --> Hiçbir şey dönmez  
+
+* default pattern'da(Program.cs) id yerine ne yazdıysan parametre için kodlarken de aynı isimle kullanmalısın.
+  Daha sonra kendi ekleyeceğin parametreler için farklı konfigürasyonlar yapabilirsin.
+
+* Veri Taşıma Yöntemleri(Controller-View): - ViewBag   - TempData
+                                           - ViewData  - ViewModel(Hacimli datalı göndermek için Best Practice)
+
+* ViewBag ve ViewData ile aynı ActionMethod un View sayfasına veri taşıyabiliriz.
+* TempData ile bir ActionMethod dan diğer ActionMethod a veri taşıyabiliriz.
+-------------------------------------------------------------
+
+--VIEW--
+--------------
+
+LAYOUT
+----------
+
+* WEB sayfalarında Content hariç diğer kısımlar (header,menu,footer) genellikle aynıdır.
+
+* Ortak sayfaları bu LAYOUT(özelleştirilmiş .cshtml dosyalarıdır) içerisinde tutarız.
+
+* Bir projede birden çok LAYOUT olabilir.Sadece çalıştığın cshtml dosyasının hangi layout içerisinde gözükeceğini belirtmelisin.
+
+* Layout sayfasındaki body kısmında @RenderBody() denen bir yer var.
+
+* Bunun anlamı bizim index ve sayfalarımızın içeriği buradaki metodun içerisinde gözükür.
+
+* Projede _ViewStarts sayfasında Layoutlar belirtilir.
+
+* Bir Layout içerisinde mutlaka RENDERBODY olmalı.
+
+-------------------------------------------------
+
+LAYOUT SAYFASI OLUŞTURMA
+-----------------------------
+* Bir controller ve onun view sayfasını oluşturduk.
+
+* View'ın Title'ını belirlemeliyiz.
+
+* Sonra hangi layoutu kullanıcağını belirtmeliyiz.
+
+* Layout=null yazarsan hiçbir layout kullanmaz.
+----------------------------------------------------
+
+RENDER SECTİON NEDİR NASIL TANIMLANIR
+--------------------------------------
+* RenderSectionAsync metodu layout içerisinde tanımlanır.
+
+* Bu metodlar ekstra olarak layout içerisine kod ekleyebileceğimiz anlamına geliyor.
+
+* Mesela bir .cshtml dosyasının header içerisinde gözükmesini istiyoruz.(normalde renderbody de gözükür).Header için,
+
+* Layout da header kısmına -@await RenderSectionAsync("header", required: false)- yazdık.Tabiki birden fazla da olabilir.
+
+* İlgili index in View ında -@section header{}- yazdık.Artık süslü parantez içindeki kodlar Layout un headerında gözükcek.
+
+* Bunun dışındakiler default olarak RenderBody içine eklenir.
+
+* Eğer -required:true- yaparsan ilgili Layoutu kullanan bütün sayfalar ilgili section'ı tanımlamalı.
+
+* Best Practice : Klasik Layout sayfasının en altında -@await RenderSectionAsync("Scripts", required: false)-
+
+  bölümü var burası önemli çünkü buraya javascript dosyaları yüklenir.Eğer siz Scripts section'ının içerisine
+
+  jquery dosyalarını eklemezseniz bu kodlar RenderBody içinde çalışır ve kodunuz hata ALABİLİR! Alabilir diyorum
+
+  çünkü bu bölümün öncesinde bazı javascript kütüphaneleri eklenir ve eğer eklediğiniz jquery dosyaları bu kütüp-
+
+  haneleri kullanması gerekiyorsa RenderBody içerisinde kütüphaneler yüklenmeden çalışacağından hata alınır ama yok eğer kullanmı-
+
+  yorsa RenderBody içerisine eklenebilir ama bir Best Practice değildir.
+
+
+* Peki niye CSS dosyaları yukarıda da JavaScript dosyaları aşağıda:Çünkü ilk önce görselin yüklenmesi bizim için
+
+  önemli.(Kodlar aşağıdan yukarıya doğru çalışır.).Javascript dosyalarını önce yüklersek daha site görseli yüklenmeden
+
+  bunlar yüklenir ve site bir tık yavaş çalışır.
+---------------------------------------------------------
+
+Partial VIEW
+---------------
+* İhtiyaç olduğunda kullanılacak kısmi .cshtml dosyalarıdır.
+
+* Bu sayfalar bir sayfada gözükür bir sayfada gözükmez yani normal Layoutlara benzemez.
+
+* Layout içerisindeki Content içine de koyulabilir.Bunlar her zaman kullanılacak View'ler olur.
+
+* Layout içerisine değil sayfaların içerisine koyulur.
+
+* İsimleri '_(alt tre) ile başlar.'
+
+* Bu sayfalar tek başına bir anlam ifade etmez mutlaka gerçek sayfaların içerisinde kullanılmalı.
+
+* Partial VIEW kullanmak için  -<partial "{partialviewismi}"></partial> veya @await Html.PartialAsync"{partielviewismi}") ama Best Practice olan ilki- yazılır
+
+* Her zaman asenkron kodlama yapmalıyız.Varolan thread'i mümkün olduğunca bloklamamalıyız.
+--------------------------------------------------------
+
+View İçerisine Javascript Kodu Yazmak
+-------------------------------------
+
+* Üstte bahsetmiştim Scripts section'ı içerisine yazılır.
+
+* Sayfaya gittik Scripts section'ı oluşturduk ve js kodunu yazdık.
+
+---------------------------------------
+
+
+View İçerisine CSS Kodu Yazmak
+-------------------------------------
+
+* Aynı mantık tek fark burada otomatik section yok kendin oluşturuyorsun.
+
+* Var olan css dosyalarını kullanmak için section içine <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" /> yazılır.
+
+* İlk işaret wwwroot dosyanını/wwwroot içindeki dosya/wwwroot içindeki dosyanın içindeki dosya.
+-------------------------------------------------------
+
+--MODEL--
+--------------
+
+* Database ve Business kodları burada bulunur.
+
+* Business kodlarını MVC haricinde bir katmanda tutmak daha iyidir.
