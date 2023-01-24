@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileProviders;
+using MyAspNetCoreApp.Web.ViewModels;
 using MyAspNetProject.Web.Filters;
 using MyAspNetProject.Web.Helpers;
 using MyAspNetProject.Web.Models;
@@ -116,6 +117,7 @@ namespace MyAspNetProject.Web.Controllers
                 try
                 {
                     var product = _mapper.Map<Product>(newProduct);
+                  
                     if (newProduct.Image != null && newProduct.Image.Length > 0)
                     {
                         var root = _fileProvider.GetDirectoryContents("wwwroot");
@@ -231,8 +233,14 @@ namespace MyAspNetProject.Web.Controllers
 
 
             }, "Value", "Data", updateProduct.Color);
-                var categories = _context.Category.OrderBy(c => c.Id).ToList();
-                ViewBag.categorySelect = new SelectList(categories, "Id", "Name",updateProduct.CategoryId);
+
+
+
+                var categories = _context.Category.ToList();
+
+                ViewBag.categorySelect = new SelectList(categories, "Id", "Name", updateProduct.CategoryId);
+
+
                 return View();
             }
 
@@ -257,7 +265,21 @@ namespace MyAspNetProject.Web.Controllers
 
                 updateProduct.ImagePath = randomImageName;
             }
+
+
+
+
+
+
+
+
+
+
+
+
             var product = _mapper.Map<Product>(updateProduct);
+
+
 
             _context.Products.Update(product);
             _context.SaveChanges();

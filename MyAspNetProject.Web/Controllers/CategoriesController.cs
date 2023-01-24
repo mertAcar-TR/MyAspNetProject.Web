@@ -59,7 +59,7 @@ namespace MyAspNetCoreApp.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(category);
+                _context.Category.Add(category);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
@@ -98,7 +98,7 @@ namespace MyAspNetCoreApp.Web.Controllers
             {
                 try
                 {
-                    _context.Update(category);
+                    _context.Category.Update(category);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)

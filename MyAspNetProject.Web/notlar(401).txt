@@ -74,3 +74,58 @@ ONE TO MANY RELATIONSHIP
 * One to many'de,many'nin olduğu yerde birde asıl ilişkiyi tutucak foreign key tanımlanır.
 
 * İsimleri direk yazarsan ef core kolay anlar.
+----------------------------------------------
+
+APPSETTINGS.json
+-----------------
+* Appsetting'den dosya okumak için IConfiguration isimli interface'ı DI container'a geçmeliyiz.
+-----------------------------------------------------------------------------------------------
+
+COOKIE
+--------
+* Cookie,sayfamızı ziyaret eden kullanıcıların tarayıcılarında tutulan bilgilerdir.
+
+* Key value şeklinde tutulup bir ömürleri vardır.
+
+* Tarayıcılar eğer daha önce o host'a bir cookie kaydedilmişse her istekle beraber o cookie'yi ekler ve sunucuya öyle gönderir.
+  Bu sayede bir kaydettiğimiz bir cookie'yi başka isteklerde okuyabiliyoruz.
+
+* HttpOnly sayesinde cookiler'i js okuyamaz.
+
+* Kimlik doğrulama ve kimlik yönlendirme için cookie kullanılır.
+
+* Mesela kullanıcı bir haber sitesine girip haber okumak istedi.Fontu büyüttü cookie'ye bu kaydedilirse
+  kullanıcı bir daha girdiğinde aynı siteye font aynı kalır.
+
+* Kritik ve önemli bilgiler cookie'de tutulmaz.
+-------------------------------------------------
+
+AJAX (Asynchronous Javascript and XML)
+--------------------------------------
+* AJAX,bir web sayfasını eşzamansız güncellememize imkan veren bir teknikdir.
+
+* Kullanıcıya bir sayfa göstermek için web sayfasının sunucuya gidip tekrar dönmelidir.
+  AJAX bunu kullanıcıya hissettirmeden yapmamızı sağlar.
+
+* Mesela bir websiteniz var ve bir köşede en yüksek puana sahip 10 kullanıcıyı gösteriyorsun.
+  AJAX kullanmazsan kullanıcı listedeki değişiklikleri sayfayı yenileyerek ya da başka bir yere gidip
+  dönerek yapabilir.AJAX kullanırsan kullanıcı o sayfada dursa bile liste yenilenir.Sunucuya bütün sayfa
+  yerine sadece ilgili alan gider.
+
+* Ne kadar Javascript desek de günümüzde Json kullanılır.
+
+* return Json dedik çünkü artık arka tarafta istek yapcaz.
+
+* $(document) ==> bu web sayfasına karşılık gelir.
+  $(document).ready ==> alttaki döküman yüklendikten sonra bunları çalıştır.
+------------------------------------------------------------------------------
+
+PUBLISH
+--------
+
+* Release mod,debug moddaki bir şey gereksiz dosyanın ayıklandığı versiyondur.
+
+* Filezilla ile dosyaları hosting firmasına atabilirsin.
+
+* Atıcağın sunucuda gerekli proje versiyonu varsa Framework-dependent diyebilirsin.
+  Self-contained dersen bu projenin çalışması için gerekli bütün kodlar publish klasörüne eklenir.xf

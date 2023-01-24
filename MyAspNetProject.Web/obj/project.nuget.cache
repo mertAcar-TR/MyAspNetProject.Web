@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "HYSir8sspLl/cTve98K7agmP8HKvcNQvAizNXKIdTyf9ij14zn9ftWG6gX2bjJzzAg52COVabkYHi0OsQdejjg==",
+  "dgSpecHash": "7qWhz420nyZX8Ovc+Rk2KybCfA0d3VdNe8FfXbP9POOWhNBKMmJX0zwrQfF6HPnOUFHUkDUbIjeSIQIP8zcL5g==",
   "success": true,
   "projectFilePath": "/Users/mertacar/Desktop/Software/Projects/MyAspNetProject-master/MyAspNetProject.Web/MyAspNetProject.Web.csproj",
   "expectedPackageFiles": [
-    "/Users/mertacar/.nuget/packages/automapper/12.0.0/automapper.12.0.0.nupkg.sha512",
+    "/Users/mertacar/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/mertacar/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.0/automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "/Users/mertacar/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/mertacar/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",

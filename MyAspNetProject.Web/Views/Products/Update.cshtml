@@ -1,4 +1,4 @@
-﻿
+﻿@using MyAspNetCoreApp.Web.ViewModels
 @{
     ViewData["Title"] = "Update";
 }
@@ -13,7 +13,7 @@
     <input type="hidden" asp-for="ImagePath" />
   
 
-    <div class="mb-3">
+    <div class="mb-3"> 
         @if (!String.IsNullOrEmpty(Model.ImagePath))
         {
             <img style="width:100px; height:100px;" src="/images/@(Model.ImagePath)" />

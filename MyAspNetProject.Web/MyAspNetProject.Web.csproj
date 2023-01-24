@@ -20,6 +20,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
   </ItemGroup>
 
@@ -41,6 +42,10 @@
     <None Remove="Views\Blog\" />
     <None Remove="Filters\" />
     <None Remove="Views\Categories\" />
+    <None Remove="AutoMapper" />
+    <None Remove="Views\AppSetting\" />
+    <None Remove="Views\Cookie\" />
+    <None Remove="Views\VisitorAjax\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Helpers\" />
@@ -56,6 +61,9 @@
     <Folder Include="Views\Blog\" />
     <Folder Include="Filters\" />
     <Folder Include="Views\Categories\" />
+    <Folder Include="Views\AppSetting\" />
+    <Folder Include="Views\Cookie\" />
+    <Folder Include="Views\VisitorAjax\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\images\" />
